@@ -1,15 +1,61 @@
-# Online-Banking-Analysis
-This is the first project where we worked on apache spark, In this project what we have done is that we downloaded the datasets from KAGGLE where everyone is aware of, we have downloaded loan, customers credit card and transactions datasets . After downloading the datsaets we have cleaned the data . Then after by using new tools and technologies like spark, HDFS, Hive and many more we have executed new use cases on the datasets, that we have downloaded from kaggle. As we all know apache spark is a framework that can quickly process the large datsets.
+📊 Online Banking Analysis
 
-So now let me explain the dataflow of how we have done is, first primarly we have ingested the data that is , we retrieved the data and then downloaded the datasets from kaggle and then we stored this datasets in cloud storage and imported from MYSQL to hive by sqoop this is how we have ingested the data , second after ingesting the data we have processed the large datasets in hive and then we have analyzed the data using pyspark in jupyter notebook by implementing several use cases.
+This project performs a comprehensive analysis of an online banking system using PySpark on Databricks. It explores customer data across three key datasets: loan information, credit card activity, and bank transactions.
 
-TECHNOLOGIES USED:
+🚀 Features
 
-Spark SQL Spark HDFS Hive
+Loan Dataset Analysis:
 
-ROLES AND RESPONSIBLITIES:
+Categorizes loan types and counts.
 
-Utilized the historical data from kaggle.com. Collected 3 datasets of online transactions, loan and customer credit card. Implemented Spark Session to load the data into Data Frames. Used standalone cluster mode in spark environment to run on Spark SQL queries.
+Filters high-value loans and high-income borrowers.
 
-license
-This project uses the following license: MIT License
+Identifies risky profiles like returned cheques with low income or single status.
+
+Analyzes monthly expenditures.
+
+Credit Card Dataset Analysis:
+
+Identifies credit card eligibility based on credit score.
+
+Combines eligibility with activity status.
+
+Geographic filtering of credit card users.
+
+Salary-based and product-based insights into customer churn.
+
+Transaction Dataset Analysis:
+
+Tracks frequency and volume of transactions per account.
+
+Finds maximum/minimum withdrawal and deposit amounts.
+
+Summarizes account balances.
+
+Detects high-value withdrawals and busiest transaction dates.
+
+🛠️ Tech Stack
+
+Apache Spark (via PySpark)
+
+Databricks Notebook
+
+Python
+
+📂 Data Sources
+
+loan.csv — Customer loan data.
+
+credit_card.csv — Credit card customer profiles.
+
+txn.csv — Account transaction history.
+
+🔍 Use Cases
+
+Customer segmentation
+
+Fraud detection
+
+Financial behavior analysis
+
+Business decision support for banking services
